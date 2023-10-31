@@ -23,7 +23,7 @@ const socialCount = SOCIALS.filter(social => social.active).length;
   <Header />
   <main id="main-content">
     <section id="hero">
-      <h1 class="mr-2">Mingalaba</h1>
+      <h1 class="mr-2">Kempis Tamás: Krisztus követése</h1>
       <a
         target="_blank"
         href="/rss.xml"
@@ -41,29 +41,12 @@ const socialCount = SOCIALS.filter(social => social.active).length;
       </a>
 
       <p>
-        AstroPaper is a minimal, responsive, accessible and SEO-friendly Astro
-        blog theme. This theme follows best practices and provides accessibility
-        out of the box. Light and dark mode are supported by default. Moreover,
-        additional color schemes can also be configured.
+        Ez a program szöveghű elektronikus kiadása dr. Jelenits István, Sch. P. fordításának, amelyet az Ecclesia Kiadó jelentetett meg. Itt a negyedik kiadást használtuk fel, melynek azonosítója: ISBN 963 363 122 x.
+        Az elektronikus kiadás jogát Jelenits István adta meg kizárólag a Pázmány Péter Elektronikus Könyvtár számára 1997. október 15-én. Minden más szerzői jog továbbra is a fordítóé, Jelenits Istváné.
+        Az elektronikus kiadás szövegét Szabó L. Éva vitte számítógépbe.
       </p>
       <p>
-        Read the blog posts or check
-        <LinkButton
-          className="hover:text-skin-accent underline underline-offset-4 decoration-dashed"
-          href="https://github.com/satnaing/astro-paper#readme"
-        >
-          README
-        </LinkButton> for more info.
-      </p>
-      {
-        // only display if at least one social link is enabled
-        socialCount > 0 && (
-          <div class="social-wrapper">
-            <div class="social-links">Social Links:</div>
-            <Socials />
-          </div>
-        )
-      }
+      
     </section>
 
     <Hr />
@@ -90,22 +73,6 @@ const socialCount = SOCIALS.filter(social => social.active).length;
 
     <section id="recent-posts">
       <h2>Recent Posts</h2>
-      <ul>
-        {
-          sortedPosts
-            .filter(({ data }) => !data.featured)
-            .map(
-              ({ data }, index) =>
-                index < 4 && (
-                  <Card
-                    href={`/posts/${slugify(data)}`}
-                    frontmatter={data}
-                    secHeading={false}
-                  />
-                )
-            )
-        }
-      </ul>
       <div class="all-posts-btn-wrapper">
         <LinkButton href="/posts">
           All Posts
