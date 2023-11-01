@@ -3,14 +3,14 @@ import type { Site, SocialObjects } from "./types";
 export const SITE: Site = {
   website: "https://krisztuskovetese.pages.dev/", // replace this with your deployed domain
   author: "Kempis Tamás",
-  desc: "Krisztus követése",
+  desc: "Kempis Tamás - Krisztus követése",
   title: "Krisztus követése",
   ogImage: "kempis-og.webp",
   lightAndDarkMode: true,
   postPerPage: 3,
 };
 
-export const LOCALE = ["en-EN"]; // set to [] to use the environment default
+export const LOCALE = ["hu-HU"]; // set to [] to use the environment default
 
 export const LOGO_IMAGE = {
   enable: false,
@@ -22,7 +22,7 @@ export const LOGO_IMAGE = {
 export const SOCIALS: SocialObjects = [
   {
     name: "Github",
-    href: "https://github.com/satnaing/astro-paper",
+    href: "https://github.com/calvez/krisztuskovetese",
     linkTitle: ` ${SITE.title} on Github`,
     active: true,
   },
@@ -30,19 +30,19 @@ export const SOCIALS: SocialObjects = [
     name: "Facebook",
     href: "https://github.com/satnaing/astro-paper",
     linkTitle: `${SITE.title} on Facebook`,
-    active: true,
+    active: false,
   },
   {
     name: "Instagram",
     href: "https://github.com/satnaing/astro-paper",
     linkTitle: `${SITE.title} on Instagram`,
-    active: true,
+    active: false,
   },
   {
     name: "LinkedIn",
     href: "https://github.com/satnaing/astro-paper",
     linkTitle: `${SITE.title} on LinkedIn`,
-    active: true,
+    active: false,
   },
   {
     name: "Mail",
