@@ -14,7 +14,7 @@ let tags = getUniqueTags(posts);
 ---
 
 <Layout title={`Tárgymutató | ${SITE.title}`}>
-  <Header activeNav="tags" />
+  <Header activeNav="targymutato" />
   <Main pageTitle="Tárgymutató" pageDesc="A szövegben lévő kulcsszavak.">
     <ul>
       {tags.map(tag => <Tag name={tag} size="lg" />)}
